@@ -1,0 +1,31 @@
+procedure (ch:chaine)
+
+    debut
+    ch="bonjour rima ."
+      if ch.length()-1== " . " alors
+         afficher
+        else 
+        ne pas afficher
+
+    for i in range(0,length(ch)) alors
+        a=0
+        m=1
+        v=0
+        
+        if ch[i] !=" " alors
+            a=a+1
+        end if
+
+        if ch[i]==" "alors
+            m=m+1
+        end if
+
+        if ch[i] in [a,e,i,o,u,A,E,I,O,U] alors
+            v=v+1
+        end if
+
+        ecrire("Length of the sentence:", a)
+        ecrire("Number of words:", m)
+        ecrire("Number of voyelles:", v)
+        
+        
